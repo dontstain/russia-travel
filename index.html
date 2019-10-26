@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Россия</title>
+    <title>Путешествия по России</title>
     <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-    <!-- Нужно исправить: цвет фона распространяется на всю ширину страницы -->
+
     <div class="page">
 
         <header class="header">
@@ -36,13 +36,11 @@
                     <h1 class="lead__title">
                         Путешествия по России
                     </h1>
-                    <!-- Можно лучше: подзаголовки не рекомендуется делать элементами h. Подробности: https://www.w3.org/TR/html52/common-idioms-without-dedicated-elements.html#subheadings-subtitles-alternative-titles-and-taglines -->
                     <p class="lead__subtitle">
                         Настоящая страна не в выпусках новостей, а здесь.
                     </p>
                 </header>
                 <div class="lead__image-container">
-                    <!-- Нужно исправить: на разной ширине эта картинка выходит за пределы вьюпорта. Можно использовать проценты вместо пикселей и vw. -->
                     <img src="./images/__image(0).jpg" alt="Путешествие"  class="lead__image">
                     <p class="lead__image-caption"> 
                         Ваша полка — верхняя
@@ -59,7 +57,6 @@
                             По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
                     </p>               
                 </div>
-                <!-- Можно лучше: этот список можно сделать элементами dl, dt, dd https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element -->
                 <dl class="intro__numbers-list">
                     <div class="intro__number">
                         <dt class="intro__number-term">
@@ -69,8 +66,6 @@
                             11
                         </dd>
                     </div>
-                    <!-- Нужно исправить: нельзя использовать <br> внутри dl. Вообще br стоит использовать только для переноса строк внутри текстового содержимого одного элемента. Верстку стоит делать только через CSS. Кстати внутри dl допустимо использовать дивы. 
-                    Многие проблемы со стандартами можно выловить с помощью валидатора https://validator.w3.org/nu/ -->
 
                     <div class="intro__number">
                         <dt class="intro__number-term">
@@ -278,7 +273,6 @@
                                 <p class="video__item-duration">
                                     6:30
                                 </p>
-                                <!-- Нужно поправить: на ширине около минимальной этот элемент выходит за вьюпорт. --> 
                                 <h3 class="video__item-title">
                                     Colors of Kamchatka
                                 </h3>
@@ -391,6 +385,3 @@
 
 </body>
 </html>
-<!-- В целом все хорошо. Нужно поправить моменты, где элементы выходят за вьюпорт, чтобы не было горизонтального скролла. 
-Текст в блоках places можно переносить под карттинки раньше, чтобы он совсем не сжимался до одного слова на строку. 
-Еще момент: БЭМ не приветствует использование абстрактных оберток. Поэтому какой-нибудь place__title-container лучше заменить на place__title-header. https://ru.bem.info/forum/656/ https://ru.bem.info/methodology/html/#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-html-%D0%BE%D0%B1%D0%B5%D1%80%D1%82%D0%BE%D0%BA -->
