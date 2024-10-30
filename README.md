@@ -1,2 +1,2 @@
 # traveling-russia
-More complex adaptive landing; practicing grid and flexible box layouts
+Complex adaptive landing; grid and flexible box layouts
